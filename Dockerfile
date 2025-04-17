@@ -1,15 +1,19 @@
-# Use a lightweight Python image
+# Use official lightweight Python image
 FROM python:3.10-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # Set working directory
 WORKDIR /app
 
-# Install required Python packages
-# Web3.py is required for Ethereum interactions
-RUN pip install web3
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy the service code into the container
-COPY block_stream_service.py ./block_stream_service.py
+# Copy the entire project
+COPY . .
 
-# The service will run as a simple Python application
+# Run the app
 CMD ["python", "block_stream_service.py"]
