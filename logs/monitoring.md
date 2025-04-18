@@ -5,9 +5,9 @@ This document outlines how you would monitor the block streaming system in a rea
 
 ---
 
-## 📡 Monitoring in Production
+## Monitoring in Production
 
-### ✅ Key Monitoring Practices:
+### Key Monitoring Practices:
 
 1. **Structured Logging**:
    - Each processed block is logged in JSON format.
@@ -34,7 +34,7 @@ This document outlines how you would monitor the block streaming system in a rea
 
 ---
 
-## 📈 Metrics to Track
+## Metrics to Track
 
 | Metric Name             | Description                                     |
 |-------------------------|-------------------------------------------------|
@@ -47,7 +47,7 @@ This document outlines how you would monitor the block streaming system in a rea
 
 ---
 
-## 🔧 Improvements If More Time Was Available
+##  Improvements If More Time Was Available
 
 1. **WebSocket Support**:
    - Replace polling with WebSocket subscriptions for real-time block updates.

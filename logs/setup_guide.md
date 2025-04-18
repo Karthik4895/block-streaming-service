@@ -4,7 +4,7 @@ This guide explains how to set up and run the Ethereum block streaming service b
 
 ---
 
-## 🧩 Prerequisites
+##  Prerequisites
 
 - Python 3.9 or above
 - Docker (optional, for container-based execution)
@@ -12,7 +12,7 @@ This guide explains how to set up and run the Ethereum block streaming service b
 
 ---
 
-## 🔧 Local Setup
+##  Local Setup
 
 ### 1. Clone the Repository
 

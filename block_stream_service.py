@@ -12,8 +12,8 @@ class BlockStreamingService:
             level=logging.INFO,
             format="%(asctime)s - %(levelname)s - %(message)s",
             handlers=[
-                logging.StreamHandler(),              # Console
-                logging.FileHandler("streaming.log")  # Log file
+                logging.StreamHandler(), 
+                logging.FileHandler("streaming.log")
             ]
         )
         self.providers = self._init_providers(providers)
