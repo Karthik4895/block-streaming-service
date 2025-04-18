@@ -1,8 +1,25 @@
-web3==7.10.0
-eth-typing==5.2.1
-eth-utils==3.1.1
-eth-account==0.10.0
-eth-keys==0.5.2
-eth-keyfile==0.7.0
-pytest==8.1.1
-python-dotenv==1.0.1
+# Core requirements
+web3==6.10.0
+hexbytes==0.3.1
+
+# Web3 utilities
+eth-typing==3.5.0
+eth-utils==2.2.0
+eth-abi==4.1.0
+
+# Networking
+requests==2.31.0
+urllib3==2.0.7
+
+# Logging and JSON
+python-json-logger==2.0.7
+
+# Environment management (optional)
+python-dotenv==1.0.0
+
+# Async support (optional)
+aiohttp==3.8.6
+
+# Testing
+pytest==7.4.0
+pytest-asyncio==0.21.1
